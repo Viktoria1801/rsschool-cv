@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <header>
+        <h1>Viktoria Lazko</h1>
+        <h3>Menu</h3>
+        <nav>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code example</a></li>
+                <li><a href="#en">English</a></li>
+                <li><a href="#contacts">Contact info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article id="about">
+        <h2>About me</h2>
+        <p>My goal is to become a full-stack developer who would be able to implement himself in as many areas of programming as possible. My strengths are to constantly learn something new, to achieve better and better results and, of course, in hard work, perseverance and purposefulness.</p>
+    </article>
+    <main>
+        <section id="skills">
+            <h2>Skills</h2>
+            <h4>Begginer</h4>
+            <nav>
+                <ul>
+                    <li>Java</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C/C++</li>
+                </ul>
+            </nav>
+        </section>
+        <section id="code">
+            <h2>Code example</h2>
+            <p><b>Task from CODEWARS:</b> Array.prototype.length will give you the number of top-level elements in an array.
+                Your task is to create a function <mark>deepCount</mark> that returns the number of ALL elements within an array, including any within inner-level arrays.</p>
+            <details>
+                <summary>Code here</summary>
+                <pre>
+    function deepCount(a){
+        let count = 0
+        count += a.length
+                      
+        while (a.length > 0) {
+            let array = a.shift()
+            if ((typeof array).includes('object')) {
+            count += deepCount(array)
+            } 
+        }           
+        return count
+    }
+                </pre>
+            </details>
+        </section>
+        <section>
+            <h2>English</h2>
+            <b>A1</b>  
+            <h6>Courses:</h6>
+            <ol>
+                <li>Grammer and Punctuation - <time datetime="2020-11-01">01.11.2020</time></li>
+            </ol>
+            <a href="https://www.coursera.org">coursera</a>
+        </section>
+    </main>
+    <aside id="courses">
+        <h6>Courses</h6>
+        <nav>
+            <ol>
+                <li>Introduction to Data Science in Python - <time datetime="2020-07-28">28.07.2020</time></li>
+                <li>Using Python to Access Web Data - <time datetime="2020-10-03">03.10.2020</time></li>
+                <li>Neural Networks and Deep Learning - <time datetime="2020-10-27">27.10.2020</time></li>
+                <li>Convolutional Neural Networks - <time datetime="2021-01-29">29.01.2021</time></li>
+            </ol>
+            <a href="https://www.coursera.org">coursera</a>
+        </nav>
+    </aside>
+    <footer>
+        <h5>My contact info</h5>
+        <nav>
+            <ul>
+                <li><b>phone:</b> +375445600250</li>
+                <li><b>E-mail:</b> lazkovika1@gmail.com</li>  
+                <li><b>GitHub:</b> <a href="https://github.com/Viktoria1801">Viktoria1801</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+
+</html>
+
+
+
+
